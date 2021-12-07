@@ -8,7 +8,65 @@
 
     <style>
 
-        
+        :root{
+            --width-break:600px
+        }
+
+        body{
+            margin: 0;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        main{
+            margin: auto;
+            padding: 1rem;
+            max-width: var(--width-break);
+           
+        }
+
+        textarea{
+            box-sizing: border-box;
+            display: block;
+            height:15vh;
+            width: 100%;
+            border-radius: 1rem;
+            margin:auto;
+            max-width: var(--width-break);
+
+        }
+
+        #btn-translate{
+            display: block;
+            padding: 1rem 3rem;
+            margin: 2rem;
+            border-radius: 1rem;
+            font-size: large;
+            margin-top: 2rem;
+            /* margin-right: 10px; */
+            background-color: white;
+            text-align: center;
+
+        }
+
+        #output{
+
+            border: 1px solid black;
+            display: block;
+            height: 15vh;
+            width: 100%;
+            margin: none;
+            border-radius: 1rem;
+            max-width: var(--width-break);
+
+        }
+
+        .container{
+            margin:auto
+        }
+
     </style>
 </head>
 <body>
@@ -17,8 +75,8 @@
     </nav>
     
     <main>
-        <textarea id="text_input"></textarea>
-        <button id="btn_translate">Translate to Valyrian</button>
+        <textarea id="text_input" class="container"></textarea>
+        <button id="btn-translate" class="container">Translate to Valyrian</button>
         <div id="output" class="container"></div>
     </main>
 </body>
