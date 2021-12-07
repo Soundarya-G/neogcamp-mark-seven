@@ -1,5 +1,5 @@
 var btnTranslate = document.querySelector("#btn-translate");
-var txtInput = document.querySelector("#output");
+var txtInput = document.querySelector("#txt-input");
 var outputDiv = document.querySelector("#output");
 
 var serverURL= "https://api.funtranslations.com/translate/valyrian.json"
@@ -17,7 +17,7 @@ function errorHandler(error){
 
 function clickHandler(){
 
-    var inputText=txtInput.value;
+    var inputText = txtInput.value;
 
     fetch(getTranslationURL(inputText))
     .then(response => response.json())
