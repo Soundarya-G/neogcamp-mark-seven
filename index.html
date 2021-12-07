@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,58 +8,65 @@
     <title>Valyrian translator</title>
 
     <style>
-
-        :root{
-            --width-break:600px
+        :root {
+            --width-break: 600px
         }
 
-        body{
-            margin: 0;
+        body {
+
+            background-image: url(/images/valyrian.jfif);
+            background-position: 100% background-size: cover;
             font-family: 'Roboto Slab', serif;
             font-size: xx-large;
+
         }
 
-        h1{
+        h1 {
             text-align: center;
+            color: white;
         }
 
-        main{
+        main {
             margin: auto;
             padding: 1rem;
             max-width: var(--width-break);
-           
+
         }
 
-        textarea{
+        textarea {
             box-sizing: border-box;
             display: block;
-            height:15vh;
+            height: 15vh;
             width: 100%;
             border-radius: 0.5rem;
-            margin:auto;
+            margin: auto;
             max-width: var(--width-break);
             font-weight: bolder;
-            border: 1px solid black;
+            border: 3px solid black;
+            opacity: 0.3;
+            background-color: #FEF9C3;
 
         }
 
-        #btn-translate{
+        #btn-translate {
             display: block;
             padding: 1rem 3rem;
             margin: 2rem;
             border-radius: 0.5rem;
             font-size: large;
             margin-top: 2rem;
-            background-color: white;
-            text-align : center;
-            font-weight: bold;
-            border: 1px solid black;
+            text-align: center;
+            font-weight: bolder;
+            border: 3px solid black;
+            background-color: #FEF9C3;
+            opacity: 0.3;
+            
 
         }
 
-        #output{
+        #output {
 
-            border: 1px solid black;
+            border: 3px solid black;
             display: block;
             height: 15vh;
             width: 100%;
@@ -66,20 +74,23 @@
             border-radius: 1rem;
             max-width: var(--width-break);
             font-weight: bolder;
+            opacity: 0.5;
+            background-color: #FEF9C3;
+
 
         }
 
-        .container{
-            margin:auto
+        .container {
+            margin: auto
         }
-
     </style>
 </head>
+
 <body>
     <nav>
         <h1>Speak in Valyrian</h1>
     </nav>
-    
+
     <main>
         <textarea id="text_input" class="container"></textarea>
         <button id="btn-translate" class="container">Translate to Valyrian</button>
@@ -88,4 +99,5 @@
 
     <script src="app.jss" type="text/javascript"></script>
 </body>
+
 </html>
